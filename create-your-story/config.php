@@ -1,7 +1,7 @@
 <?php
 function SGBDConnect() {
     try {
-        $connexion = new PDO('mysql:host=localhost;dbname=create_sto', 'root', '');
+        $connexion = new PDO('mysql:host=localhost;dbname=create_sto', 'xxxx', 'xxxx');
         $connexion->query('SET NAMES UTF8');
     } catch (PDOException $e) {
         echo 'Erreur !: ' . $e->getMessage() . '<br />';
