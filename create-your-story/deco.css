@@ -1,0 +1,156 @@
+
+@import url('https://fonts.cdnfonts.com/css/oceanwide');
+@import url('https://fonts.cdnfonts.com/css/roblox-new');
+                
+body{
+    background-image: linear-gradient(to right top, #e06eaf, #d27ac3, #c186d3, #af92de, #9c9ce5, #8aa8ef, #79b4f5, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.container{
+    margin: 30px;
+}
+
+.container {
+    -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.container.fade-in {
+    
+    -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+.titre-enonce{
+    font-family: 'Gotham Black', sans-serif;
+    color: white;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0 1px 0px #da7cff, 
+    1px 0 0px #5dabcd, 
+    1px 2px 1px #da7cff, 
+    2px 1px 1px #5dabcd, 
+    2px 3px 2px #da7cff, 
+    3px 2px 2px #5dabcd, 
+    3px 4px 2px #da7cff, 
+    4px 3px 3px #5dabcd, 
+    4px 5px 3px #da7cff, 
+    5px 4px 2px #5dabcd, 
+    5px 6px 2px #da7cff, 
+    6px 5px 2px #5dabcd, 
+    6px 7px 1px #da7cff, 
+    7px 6px 1px #5dabcd, 
+    7px 8px 0px #da7cff, 
+    8px 7px 0px #5dabcd;
+}
+
+.titre-explique{
+    font-family: 'oceanwide', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.style-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-commence{
+    background-color: #865DFF;
+    border-radius: 1.5em;
+    width: 250;
+    height: 70;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10%;
+    font-family: 'oceanwide', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+.btn-commence:hover {
+
+    background-image: linear-gradient(90deg, #865DFF 0%, #da7cff 50%, #865DFF 100% );
+   animation:slidebg 1.5s infinite running ;
+} 
+@keyframes slidebg {
+    to {
+      background-position:18.3vw;
+    }
+  }
+
+.type-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 20px;
+}
+
+.grp-result{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    box-sizing: border-box;
+    border-radius: 3.5em;
+    background-color: #865DFF;
+    width: 29%;
+
+}
+
+.intitule-label{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: xX-large;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .type-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 20px;
+    }
+    .grp-result{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        background-color: #604979;
+        box-sizing: border-box;
+        border-radius: 1.5em;
+        margin : 4%;
+    }
+}
